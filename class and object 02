@@ -1,0 +1,21 @@
+class Course:
+    pass
+    
+    def __init__(self,name,years,fees,abbr):
+        self.name = name
+        self.years = years
+        self.fees = fees
+        self.abbr = abbr
+    
+    def address(self):
+        addr = f"Course Name : {self.name}\nDuration : {self.years}\
+        \nFees : {self.fees}\nExpansion : {self.abbr}"
+        return addr 
+        
+crs1 = Course("MBBS",5,40000,"Bachelor of Medicine Bachelor of Sugery")
+crs2 = Course("BE",4,80000,"Bachelor of Engineering")
+crs3 = Course("BA",3,20000,"Bachelor of Arts")
+
+
+print(crs1.address())
+print(crs2.address())
